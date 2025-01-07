@@ -1,0 +1,7 @@
+{
+    "DOWNLOADER_COUNT": 10,
+    "EXTRACTOR_COUNT": 1,
+    "FROM_SAVE_FILE": true,
+    "FROM_TIME": "2024-02-01T00:00:00Z",
+    "TO_TIME": "2024-03-01T00:00:00Z"
+}
