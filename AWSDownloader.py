@@ -58,8 +58,8 @@ class AWSDownloader:
             SaveFile.save('./save.json', self.date_time_dict)
 
 
-        for date_time, idDownloaded in self.date_time_dict.items(): 
-            if not idDownloaded:
+        for date_time, isDownloaded in self.date_time_dict.items(): 
+            if not isDownloaded:
                 self.to_download.put_nowait(date_time)
 
         print(f'{self.to_download.qsize()} items detected for downloading. Starting threads now...')

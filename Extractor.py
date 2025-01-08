@@ -48,9 +48,6 @@ class Extractor(threading.Thread):
 
                 # # Delete any non selected files
                 selected_files: list[str] = self.__get_selected_files(file_date_time)
-                # for file in glob(f'./{file_date_time}/*'):
-                #     if file not in selected_files:
-                #         remove(file)
 
                 # Construct the result obj
                 results = {file_date_time: selected_files}
